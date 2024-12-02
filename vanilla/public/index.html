@@ -17,7 +17,9 @@
     const butn = document.getElementsByClassName("aside");
 
     but.addEventListener("click", function onclicks() {
-      butn.addClassList.toggle("mini");
+      Array.from(butn).forEach((element) => {
+        element.classList.toggle("mini");
+      });
     });
   </script>
 </html>
