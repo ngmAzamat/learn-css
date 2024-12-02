@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="aside">hello</div>
+    <div class="main">
+      <button id="a">buttons</button>
+    </div>
+  </body>
+  <script>
+    const but = document.getElementById("a");
+    const butn = document.getElementsByClassName("aside");
+
+    but.addEventListener("click", function onclicks() {
+      butn.addClassList.toggle("mini");
+    });
+  </script>
+</html>
