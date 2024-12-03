@@ -1,3 +1,26 @@
-main {
+header {
   padding-left: 3rem;
+  flex-grow: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  flex-grow: 1;
+}
+
+footer {
+  flex-grow: 0;
+}
+
+ul.list-projects li {
+  list-style-type: none;
 }
