@@ -1,0 +1,12 @@
+body {
+  background-image: url("map-of-westeros.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+img {
+  position: relative;
+  height: 25px;
+  width: 25px;
+}
