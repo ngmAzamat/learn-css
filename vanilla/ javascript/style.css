@@ -3,23 +3,3 @@
 
 @import url("./style/main.css");
 @import url("./style/reset.css");
-
-body {
-  display: flex;
-  height: 100vh;
-}
-.main {
-  flex-grow: 1;
-}
-.aside {
-  width: 200px;
-  background-color: black;
-  color: white;
-}
-
-.mini {
-  width: 60px;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  letter-spacing: 20px;
-}

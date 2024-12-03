@@ -3,16 +3,3 @@
 
 @import url("./style/main.css");
 @import url("./style/reset.css");
-
-main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-}
-.element {
-  margin: 10px;
-  border: 1px solid red;
-  background-color: blue;
-  color: white;
-  height: 100px;
-  width: 100px;
-}
