@@ -46,7 +46,7 @@ body {
   background-size: 600%;
   z-index: -1;
   width: calc(100% + 4px);
-  animation: pricas_66 20s linear;
+  animation: pricas_66 20s linear infinite;
   transition: opasity 0.3s ease-in-out;
   height: calc(100% + 4px);
   filter: blur(8px);
