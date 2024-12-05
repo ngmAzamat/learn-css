@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.aside {
+  width: 200px;
+  color: white;
+  background-color: black;
+}
+
+.mini {
+  width: 60px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: 20px;
+}

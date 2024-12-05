@@ -1,0 +1,12 @@
+.element {
+  display: inline-block;
+
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+
+  color: white;
+
+  background-color: blue;
+  border: 1px solid red;
+}

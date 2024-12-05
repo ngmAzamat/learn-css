@@ -1,0 +1,60 @@
+body {
+  background-image: url("map-of-westeros.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+img {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+}
+
+#Stark {
+  top: 300px;
+  left: 180px;
+}
+
+#Lannister {
+  top: 665px;
+  left: 60px;
+}
+
+#Joffrey {
+  display: none;
+}
+
+#Tyrell {
+  top: 795px;
+  left: 115px;
+}
+
+#Baratheon {
+  top: 680px;
+  left: 260px;
+}
+
+#Stannis {
+  top: 120px;
+  left: 210px;
+}
+
+#Greyjoy {
+  top: 565px;
+  left: 65px;
+}
+
+#Tally {
+  top: 585px;
+  left: 165px;
+}
+
+#Martell {
+  top: 900px;
+  left: 350px;
+}
+#Arryn {
+  top: 530px;
+  left: 275px;
+}
