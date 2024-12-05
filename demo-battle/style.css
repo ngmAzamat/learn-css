@@ -6,7 +6,233 @@ body {
 }
 
 img {
-  position: relative;
+  position: absolute;
   height: 25px;
   width: 25px;
+}
+
+#Stark1,
+#Stark2 {
+  top: 300px;
+  left: 180px;
+}
+
+#Stark1 {
+  animation: Stark 20s;
+  animation-delay: 5s;
+}
+
+#Stark2 {
+  animation: Bolton 20s;
+  animation-delay: 5s;
+}
+
+#Lannister1,
+#Lannister2,
+#Lannister3 {
+  top: 665px;
+  left: 60px;
+}
+
+#Lannister2 {
+  animation: tywin 30s;
+}
+#Lannister1 {
+  animation: Jeyme 20s;
+}
+
+#Lannister3 {
+  animation: dead 25s;
+}
+
+#Joffrey {
+  top: 680px;
+  left: 260px;
+}
+
+#Tyrell {
+  top: 795px;
+  left: 115px;
+  animation: Tyrell 20s;
+  animation-delay: 10s;
+}
+
+#Baratheon {
+  top: 775px;
+  left: 305px;
+}
+
+#Stannis {
+  top: 625px;
+  left: 350px;
+  animation: Stannis 20s;
+  animation-delay: 20s;
+}
+
+#Greyjoy {
+  top: 565px;
+  left: 65px;
+}
+
+#Tally {
+  top: 585px;
+  left: 165px;
+}
+
+#Martell {
+  top: 900px;
+  left: 350px;
+}
+#Arryn {
+  top: 530px;
+  left: 275px;
+}
+
+@keyframes Stannis {
+  10% {
+    top: 700px;
+    left: 375px;
+  }
+  20% {
+    top: 775px;
+    left: 305px;
+  }
+  40% {
+    top: 675px;
+    left: 250px;
+  }
+  50% {
+    top: 625px;
+    left: 350px;
+  }
+  53% {
+    top: 625px;
+    left: 400px;
+  }
+  80% {
+    top: 200px;
+    left: 400px;
+  }
+  85% {
+    top: 150px;
+    left: 300px;
+  }
+  90% {
+    top: 150px;
+    left: 200px;
+  }
+  100% {
+    top: 300px;
+    left: 180px;
+  }
+}
+
+@keyframes Jeyme {
+  75% {
+    top: 600px;
+    left: 150px;
+    opacity: 0.9;
+  }
+  100% {
+    top: 600px;
+    left: 150px;
+    opacity: 0;
+  }
+}
+
+@keyframes Tyrell {
+  100% {
+    top: 675px;
+    left: 250px;
+  }
+}
+
+@keyframes Stark {
+  50% {
+    top: 485px;
+    left: 190px;
+  }
+  60% {
+    top: 500px;
+    left: 165px;
+  }
+  80% {
+    top: 600px;
+    left: 165px;
+  }
+  100% {
+    top: 665px;
+    left: 60px;
+  }
+}
+
+@keyframes tywin {
+  10% {
+    top: 665px;
+    left: 160px;
+  }
+  20% {
+    top: 610px;
+    left: 230px;
+  }
+  30% {
+    top: 610px;
+    left: 230px;
+  }
+  33% {
+    top: 600px;
+    left: 230px;
+  }
+  40% {
+    top: 550px;
+    left: 200px;
+  }
+  47% {
+    top: 600px;
+    left: 230px;
+  }
+  50% {
+    top: 610px;
+    left: 230px;
+  }
+  60% {
+    top: 610px;
+    left: 230px;
+  }
+  75% {
+    top: 665px;
+    left: 160px;
+  }
+  100% {
+    top: 680px;
+    left: 260px;
+  }
+}
+
+@keyframes Bolton {
+  50% {
+    top: 485px;
+    left: 190px;
+  }
+  60% {
+    top: 550px;
+    left: 200px;
+  }
+  80% {
+    top: 610px;
+    left: 230px;
+  }
+  100% {
+    top: 610px;
+    left: 250px;
+  }
+}
+
+@keyframes dead {
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
