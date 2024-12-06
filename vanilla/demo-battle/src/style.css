@@ -1,14 +1,14 @@
 body {
-  background-image: url("map-of-westeros.jpg");
   height: 100vh;
+  background-image: url("map-of-westeros.jpg");
   background-repeat: no-repeat;
   background-size: auto 100%;
 }
 
 img {
   position: absolute;
-  height: 25px;
   width: 25px;
+  height: 25px;
 }
 
 #Stark1,
@@ -37,6 +37,7 @@ img {
 #Lannister2 {
   animation: tywin 30s;
 }
+
 #Lannister1 {
   animation: Jeyme 20s;
 }
@@ -83,6 +84,7 @@ img {
   top: 900px;
   left: 350px;
 }
+
 #Arryn {
   top: 530px;
   left: 275px;
@@ -93,34 +95,42 @@ img {
     top: 700px;
     left: 375px;
   }
+
   20% {
     top: 775px;
     left: 305px;
   }
+
   40% {
     top: 675px;
     left: 250px;
   }
+
   50% {
     top: 625px;
     left: 350px;
   }
+
   53% {
     top: 625px;
     left: 400px;
   }
+
   80% {
     top: 200px;
     left: 400px;
   }
+
   85% {
     top: 150px;
     left: 300px;
   }
+
   90% {
     top: 150px;
     left: 200px;
   }
+
   100% {
     top: 300px;
     left: 180px;
@@ -133,6 +143,7 @@ img {
     left: 150px;
     opacity: 0.9;
   }
+
   100% {
     top: 600px;
     left: 150px;
@@ -152,14 +163,17 @@ img {
     top: 485px;
     left: 190px;
   }
+
   60% {
     top: 500px;
     left: 165px;
   }
+
   80% {
     top: 600px;
     left: 165px;
   }
+
   100% {
     top: 665px;
     left: 60px;
@@ -171,38 +185,47 @@ img {
     top: 665px;
     left: 160px;
   }
+
   20% {
     top: 610px;
     left: 230px;
   }
+
   30% {
     top: 610px;
     left: 230px;
   }
+
   33% {
     top: 600px;
     left: 230px;
   }
+
   40% {
     top: 550px;
     left: 200px;
   }
+
   47% {
     top: 600px;
     left: 230px;
   }
+
   50% {
     top: 610px;
     left: 230px;
   }
+
   60% {
     top: 610px;
     left: 230px;
   }
+
   75% {
     top: 665px;
     left: 160px;
   }
+
   100% {
     top: 680px;
     left: 260px;
@@ -214,14 +237,17 @@ img {
     top: 485px;
     left: 190px;
   }
+
   60% {
     top: 550px;
     left: 200px;
   }
+
   80% {
     top: 610px;
     left: 230px;
   }
+
   100% {
     top: 610px;
     left: 250px;
@@ -232,6 +258,7 @@ img {
   95% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
