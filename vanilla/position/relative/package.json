@@ -1,0 +1,15 @@
+{
+  "name": "relative",
+  "module": "src/index.html",
+  "type": "module",
+  "scripts": {
+    "css:lint": "stylelint src/*.css",
+    "css:fix": "stylelint src/*.css --fix"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
