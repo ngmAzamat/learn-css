@@ -1,3 +1,6 @@
+/* @import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"); */
+
 body {
   height: 100vh;
   background-image: url("map-of-westeros.jpg");
@@ -28,12 +31,12 @@ img {
 #Lannister1,
 #Lannister2,
 #Lannister3 {
-  top: 675px;
+  top: 665px;
   left: 70px;
 }
 
 #Lannister2 {
-  animation: tywin 30s forwards;
+  animation: Tywin 30s forwards;
 }
 
 #Lannister1 {
@@ -53,10 +56,10 @@ img {
   top: 805px;
   left: 125px;
   animation: Tyrell 30s forwards;
-  animation-delay: 10s;
 }
 
 #Baratheon {
+  animation: Baratheon 30s forwards;
   top: 770px;
   left: 330px;
 }
@@ -65,9 +68,23 @@ img {
   top: 638px;
   left: 357.5px;
   animation: Stannis 30s forwards;
-  animation-delay: 20s;
 }
 
+#Victarion {
+  animation: Victarion 30s forwards;
+}
+
+#Theon {
+  animation: Theon 30s forwards;
+}
+
+#Asha {
+  animation: Asha 30s forwards;
+}
+
+#Victarion,
+#Theon,
+#Asha,
 #Greyjoy {
   top: 570px;
   left: 70px;
@@ -88,176 +105,304 @@ img {
   left: 280px;
 }
 
-@keyframes Stannis {
-  10% {
-    top: 700px;
-    left: 375px;
+@keyframes Bolton {
+  30% {
+    top: 510px;
+    left: 190px;
   }
-
-  20% {
-    top: 775px;
-    left: 305px;
-  }
-
   40% {
-    top: 675px;
-    left: 250px;
+    top: 540px;
+    left: 205px;
   }
-
   50% {
-    top: 625px;
-    left: 350px;
+    top: 590px;
+    left: 235px;
   }
-
-  53% {
-    top: 625px;
-    left: 400px;
+  55% {
+    top: 617px;
+    left: 230px;
   }
-
-  80% {
-    top: 200px;
-    left: 400px;
+  77% {
+    top: 590px;
+    left: 235px;
   }
-
-  85% {
-    top: 150px;
-    left: 300px;
+  86% {
+    top: 510px;
+    left: 175px;
   }
-
-  90% {
-    top: 150px;
-    left: 200px;
-  }
-
   100% {
-    top: 300px;
-    left: 180px;
-  }
-}
-
-@keyframes Jeyme {
-  75% {
-    top: 600px;
-    left: 150px;
-    opacity: 0.9;
-  }
-
-  100% {
-    top: 600px;
-    left: 150px;
-    opacity: 0;
-  }
-}
-
-@keyframes Tyrell {
-  100% {
-    top: 675px;
-    left: 250px;
+    top: 510px;
+    left: 175px;
   }
 }
 
 @keyframes Stark {
-  50% {
-    top: 485px;
+  30% {
+    top: 510px;
     left: 190px;
   }
-
-  60% {
-    top: 500px;
-    left: 165px;
+  40% {
+    top: 590px;
+    left: 160px;
   }
-
-  80% {
-    top: 600px;
-    left: 165px;
-  }
-
-  100% {
+  51% {
     top: 665px;
-    left: 60px;
+    left: 70px;
+  }
+  65% {
+    top: 665px;
+    left: 70px;
+  }
+  75% {
+    top: 590px;
+    left: 160px;
+  }
+  85% {
+    top: 510px;
+    left: 175px;
+    opacity: 1;
+  }
+  86% {
+    top: 510px;
+    left: 175px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
-@keyframes tywin {
-  10% {
+@keyframes dead {
+  50% {
+    opacity: 1;
+  }
+  51% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes Stannis {
+  30% {
+    top: 638px;
+    left: 357.5px;
+  }
+  40% {
+    top: 700px;
+    left: 375px;
+  }
+  50% {
+    top: 770px;
+    left: 340px;
+  }
+  60% {
+    top: 690px;
+    left: 260px;
+  }
+  70% {
+    top: 638px;
+    left: 357.5px;
+  }
+  100% {
+    top: 638px;
+    left: 357.5px;
+  }
+}
+@keyframes Jeyme {
+  0% {
     top: 665px;
+    left: 70px;
+  }
+  10% {
+    top: 630px;
+    left: 120px;
+  }
+  20% {
+    top: 596px;
     left: 160px;
   }
+  39% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
 
+    top: 596px;
+    left: 160px;
+  }
+}
+@keyframes Tywin {
+  10% {
+    top: 630px;
+    left: 120px;
+  }
   20% {
-    top: 610px;
-    left: 230px;
+    top: 630px;
+    left: 175px;
   }
-
   30% {
-    top: 610px;
-    left: 230px;
-  }
-
-  33% {
     top: 600px;
-    left: 230px;
+    left: 235px;
   }
-
   40% {
     top: 550px;
-    left: 200px;
+    left: 210px;
   }
-
-  47% {
-    top: 600px;
-    left: 230px;
-  }
-
   50% {
-    top: 610px;
-    left: 230px;
+    top: 600px;
+    left: 235px;
   }
-
+  51% {
+    top: 610px;
+    left: 235px;
+  }
   60% {
-    top: 610px;
-    left: 230px;
+    top: 630px;
+    left: 175px;
   }
-
-  75% {
-    top: 665px;
-    left: 160px;
+  70% {
+    top: 680px;
+    left: 260px;
   }
-
   100% {
     top: 680px;
     left: 260px;
   }
 }
-
-@keyframes Bolton {
+@keyframes Theon {
+  40% {
+    top: 570px;
+    left: 70px;
+  }
   50% {
-    top: 485px;
+    top: 550px;
+    left: 85px;
+  }
+  60% {
+    top: 525px;
+    left: 20px;
+  }
+  65% {
+    top: 325px;
+    left: 20px;
+  }
+  70% {
+    opacity: 1;
+    top: 310px;
     left: 190px;
   }
+  75% {
+    opacity: 0;
+    top: 310px;
+    left: 190px;
+  }
+  100% {
+    opacity: 0;
 
-  60% {
+    top: 310px;
+    left: 190px;
+  }
+}
+@keyframes Asha {
+  40% {
+    top: 570px;
+    left: 70px;
+  }
+  50% {
     top: 550px;
+    left: 85px;
+  }
+  60% {
+    top: 525px;
+    left: 20px;
+  }
+  65% {
+    top: 200px;
+    left: 20px;
+  }
+  70% {
+    top: 265px;
+    left: 120px;
+  }
+  100% {
+    top: 265px;
+    left: 120px;
+  }
+}
+@keyframes Victarion {
+  40% {
+    top: 570px;
+    left: 70px;
+  }
+  50% {
+    top: 550px;
+    left: 85px;
+  }
+  60% {
+    top: 525px;
+    left: 20px;
+  }
+  65% {
+    top: 415px;
+    left: 20px;
+  }
+  70% {
+    top: 415px;
     left: 200px;
   }
-
-  80% {
-    top: 610px;
-    left: 230px;
-  }
-
   100% {
-    top: 610px;
+    top: 415px;
+    left: 200px;
+  }
+}
+@keyframes Baratheon {
+  50% {
+    top: 770px;
+    left: 330px;
+  }
+  60% {
+    opacity: 1;
+    top: 690px;
+    left: 250px;
+  }
+  70% {
+    top: 690px;
+    left: 250px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    top: 690px;
     left: 250px;
   }
 }
-
-@keyframes dead {
-  95% {
-    opacity: 1;
+@keyframes Tyrell {
+  60% {
+    top: 750px;
+    left: 150px;
   }
-
+  50% {
+    top: 735px;
+    left: 200px;
+  }
+  60% {
+    top: 735px;
+    left: 200px;
+  }
+  65% {
+    top: 690px;
+    left: 240px;
+  }
+  70% {
+    top: 690px;
+    left: 250px;
+  }
   100% {
-    opacity: 0;
+    top: 690px;
+    left: 250px;
   }
 }
