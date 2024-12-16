@@ -1,6 +1,6 @@
-div {
-  border: 1px solid black;
-}
+@import url("https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css");
+@import url("https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css");
+
 .info {
   background-color: blue;
   height: 300px;
@@ -13,6 +13,7 @@ main {
   flex-wrap: wrap;
 }
 .sticky {
+  border: 1px solid white;
   position: sticky;
   height: 300px;
   width: 200px;
