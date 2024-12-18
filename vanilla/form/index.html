@@ -7,12 +7,7 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="container">
-            <div id="box">
-                <div id="block"></div>
-            </div>
-        </div>
-        <button id="dialoge-button2" onclick="openDialoge2(element)">
+        <button id="dialog-button2" onclick="openDialog2(event)">
             show Parent form
         </button>
         <dialog id="2">
@@ -26,6 +21,8 @@
                     <option value="static">static</option>
                     <option value="sticky">sticky</option>
                 </select>
+                <label>color</label>
+                <input type="color" id="color" onchange="onClick2()" />
                 <label>unit</label>
                 <select onchange="onClick2()" id="select2">
                     <option value="px">пиксели</option>
@@ -77,27 +74,14 @@
                     placeholder="пишите значение для bottom"
                 />
                 <button id="button2">Начать Заново</button>
+                <button id="dialog-button2" onclick="closeDialog2(event)">
+                    hide Parent form
+                </button>
             </form>
         </dialog>
 
-        <button
-            id="dialog-button"
-            onclick="console.log('click')"
-            onmouseup="console.log('mouseup')"
-        >
-            Test
-        </button>
-
-        <span onclick="console.log('click')" onmouseup="console.log('mouseup')">
-            Test
-        </span>
-
-        <button
-            id="dialog-button"
-            onclick1="openDialog(element)"
-            onclick="console.log('click')"
-        >
-            show daughter Form
+        <button id="dialog-button" onclick="openDialog(event)">
+            show Daughter form
         </button>
 
         <dialog id="1">
@@ -111,6 +95,8 @@
                     <option value="static">static</option>
                     <option value="sticky">sticky</option>
                 </select>
+                <label>color</label>
+                <input type="color" id="color" onchange="onClick()" />
                 <label>unit</label>
                 <select id="select">
                     <option value="px">пиксели</option>
@@ -163,8 +149,14 @@
                     placeholder="пишите значение для bottom"
                 />
                 <button id="button">Начать Заново</button>
+                <button id="dialog-button" onclick="closeDialog(event)">
+                    hide Daughter form
+                </button>
             </form>
         </dialog>
+        <div id="box">
+            <div id="block"></div>
+        </div>
     </body>
     <script src="index.js"></script>
 </html>

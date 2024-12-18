@@ -30,28 +30,23 @@ function onClick2() {
   block2.style.bottom = inputBottom2.value + unitOfMeasurement2.value;
 }
 
-function openDialog(element) {
-  console.log("Open");
+function openDialog(event) {
+  event.preventDefault();
+
   document.getElementById("1").showModal();
-  element.setAttribute("onclick", "closeDialoge()");
-  document.getElementById("dialoge-button").innerHTML = "hide daughter form";
 }
 
-function closeDialog(element) {
+function closeDialog(event) {
+  event.preventDefault();
   document.getElementById("1").close();
-  element.setAttribute("onclick", "openDialoge()");
-  document.getElementById("dialoge-button").innerHTML = "show daughter form";
 }
 
-function openDialoge2() {
+function openDialog2(event) {
+  event.preventDefault();
+
   document.getElementById("2").showModal();
-  element.setAttribute("onclick", "closeDialoge2()");
-  document.getElementById("dialoge-button2").innerHTML = "hide parent form";
 }
-function closeDialoge2() {
+function closeDialog2(event) {
+  event.preventDefault();
   document.getElementById("2").close();
-  element.setAttribute("onclick", "openDialoge2()");
-  document.getElementById("dialoge-button2").innerHTML = "show parent form";
 }
-
-console.log("Script Loaded");

@@ -5,19 +5,10 @@
 label {
     width: 100%;
 }
-
 html,
 body {
     min-height: 100vh;
     min-width: 100%;
-}
-.container {
-    position: absolute;
-    min-height: 100vh;
-    min-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 select {
@@ -59,10 +50,12 @@ form > * {
 button {
     color: white;
     font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
     padding: 10px;
     background-color: blue;
     outline: none;
-    border: 1px solid black;
+    border: none;
 }
 
 input {
