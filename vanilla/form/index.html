@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div id="box">
+                <div id="block"></div>
+            </div>
+        </div>
+        <button id="dialoge-button2" onclick="openDialoge2(element)">
+            show Parent form
+        </button>
+        <dialog id="2">
+            <form>
+                <h1>Parent</h1>
+                <label>position</label>
+                <select onchange="onClick2()" id="position2">
+                    <option value="relative">relative</option>
+                    <option value="absoulte">absoulte</option>
+                    <option value="fixed">fixed</option>
+                    <option value="static">static</option>
+                    <option value="sticky">sticky</option>
+                </select>
+                <label>unit</label>
+                <select onchange="onClick2()" id="select2">
+                    <option value="px">пиксели</option>
+                    <option value="%">проценты</option>
+                    <option value="em">em</option>
+                    <option value="rem">rem</option>
+                    <option value="vw">vw</option>
+
+                    <option value="vh">vh</option>
+                    <option value="vmin">vwin</option>
+                    <option value="vmax">vwax</option>
+                    <option value="svh">vwax</option>
+                    <option value="lvh">vwax</option>
+                    <option value="dvh">vwax</option>
+                </select>
+                <label>top</label>
+                <input
+                    onchange="onClick2()"
+                    id="top2"
+                    type="number"
+                    value="0"
+                    placeholder="пишите значение для top"
+                />
+                <label>left</label>
+
+                <input
+                    onchange="onClick2()"
+                    id="left2"
+                    value="0"
+                    type="number"
+                    placeholder="пишите значение для left"
+                />
+                <label>right</label>
+
+                <input
+                    onchange="onClick2()"
+                    id="right2"
+                    value="0"
+                    type="number"
+                    placeholder="пишите значение для right"
+                />
+                <label>bottom</label>
+
+                <input
+                    onchange="onClick2()"
+                    id="bottom2"
+                    value="0"
+                    type="number"
+                    placeholder="пишите значение для bottom"
+                />
+                <button id="button2">Начать Заново</button>
+            </form>
+        </dialog>
+
+        <button
+            id="dialog-button"
+            onclick="console.log('click')"
+            onmouseup="console.log('mouseup')"
+        >
+            Test
+        </button>
+
+        <span onclick="console.log('click')" onmouseup="console.log('mouseup')">
+            Test
+        </span>
+
+        <button
+            id="dialog-button"
+            onclick1="openDialog(element)"
+            onclick="console.log('click')"
+        >
+            show daughter Form
+        </button>
+
+        <dialog id="1">
+            <form>
+                <h1>Box</h1>
+                <label>position</label>
+                <select onchange="onClick2()" id="position">
+                    <option value="absoulte">absoulte</option>
+                    <option value="relative">relative</option>
+                    <option value="fixed">fixed</option>
+                    <option value="static">static</option>
+                    <option value="sticky">sticky</option>
+                </select>
+                <label>unit</label>
+                <select id="select">
+                    <option value="px">пиксели</option>
+                    <option value="%">проценты</option>
+                    <option value="em">em</option>
+                    <option value="rem">rem</option>
+                    <option value="vw">vw</option>
+
+                    <option value="vh">vh</option>
+                    <option value="vmin">vwin</option>
+                    <option value="vmax">vwax</option>
+                    <option value="svh">vwax</option>
+                    <option value="lvh">vwax</option>
+                    <option value="dvh">vwax</option>
+                </select>
+
+                <label>top</label>
+                <input
+                    onchange="onClick()"
+                    id="top"
+                    type="number"
+                    value="0"
+                    placeholder="пишите значение для top"
+                />
+                <label>left</label>
+
+                <input
+                    onchange="onClick()"
+                    id="left"
+                    value="0"
+                    type="number"
+                    placeholder="пишите значение для left"
+                />
+                <label>right</label>
+
+                <input
+                    onchange="onClick()"
+                    id="right"
+                    value="0"
+                    type="number"
+                    placeholder="пишите значение для right"
+                />
+                <label>bottom</label>
+
+                <input
+                    onchange="onClick()"
+                    id="bottom"
+                    value="0"
+                    type="number"
+                    placeholder="пишите значение для bottom"
+                />
+                <button id="button">Начать Заново</button>
+            </form>
+        </dialog>
+    </body>
+    <script src="index.js"></script>
+</html>
