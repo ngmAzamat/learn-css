@@ -12,7 +12,7 @@ body {
 }
 
 select {
-    width: 220px;
+    width: 320px;
     padding: 10px;
     background-color: white;
     color: black;
@@ -22,7 +22,7 @@ select {
 form {
     position: relative;
     border: 1px solid black;
-    max-width: 300px;
+    max-width: 400px;
     padding: 20px;
     box-sizing: border-box;
     margin: 5px;
@@ -44,7 +44,7 @@ form > * {
     min-height: 100px;
     position: absolute;
     min-width: 100px;
-    background-color: red;
+    background-color: black;
 }
 
 button {
@@ -61,6 +61,17 @@ button {
 input {
     border: 1px solid black;
     padding: 10px;
-    width: 220px;
+    width: 320px;
     outline: none;
+}
+dialog::backdrop {
+    backdrop-filter: blur(4px);
+}
+
+.X {
+    background-color: transparent;
+    color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
 }

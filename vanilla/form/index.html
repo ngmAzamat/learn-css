@@ -22,7 +22,7 @@
                     <option value="sticky">sticky</option>
                 </select>
                 <label>color</label>
-                <input type="color" id="color" onchange="onClick2()" />
+                <input type="color" id="color2" onchange="onClick2()" />
                 <label>unit</label>
                 <select onchange="onClick2()" id="select2">
                     <option value="px">пиксели</option>
@@ -38,12 +38,18 @@
                     <option value="lvh">vwax</option>
                     <option value="dvh">vwax</option>
                 </select>
+                <label>zIndex</label>
+                <input
+                    onchange="onClick2()"
+                    id="z-index2"
+                    type="number"
+                    placeholder="пишите значение для z-index"
+                />
                 <label>top</label>
                 <input
                     onchange="onClick2()"
                     id="top2"
                     type="number"
-                    value="0"
                     placeholder="пишите значение для top"
                 />
                 <label>left</label>
@@ -51,7 +57,6 @@
                 <input
                     onchange="onClick2()"
                     id="left2"
-                    value="0"
                     type="number"
                     placeholder="пишите значение для left"
                 />
@@ -60,7 +65,6 @@
                 <input
                     onchange="onClick2()"
                     id="right2"
-                    value="0"
                     type="number"
                     placeholder="пишите значение для right"
                 />
@@ -69,13 +73,16 @@
                 <input
                     onchange="onClick2()"
                     id="bottom2"
-                    value="0"
                     type="number"
                     placeholder="пишите значение для bottom"
                 />
                 <button id="button2">Начать Заново</button>
-                <button id="dialog-button2" onclick="closeDialog2(event)">
-                    hide Parent form
+                <button
+                    class="X"
+                    id="dialog-button2"
+                    onclick="closeDialog2(event)"
+                >
+                    X
                 </button>
             </form>
         </dialog>
@@ -88,7 +95,7 @@
             <form>
                 <h1>Box</h1>
                 <label>position</label>
-                <select onchange="onClick2()" id="position">
+                <select onchange="onClick()" id="position">
                     <option value="absoulte">absoulte</option>
                     <option value="relative">relative</option>
                     <option value="fixed">fixed</option>
@@ -112,13 +119,19 @@
                     <option value="lvh">vwax</option>
                     <option value="dvh">vwax</option>
                 </select>
+                <label>zIndex</label>
+                <input
+                    onchange="onClick()"
+                    id="z-index"
+                    type="number"
+                    placeholder="пишите значение для z-index"
+                />
 
                 <label>top</label>
                 <input
                     onchange="onClick()"
                     id="top"
                     type="number"
-                    value="0"
                     placeholder="пишите значение для top"
                 />
                 <label>left</label>
@@ -126,7 +139,6 @@
                 <input
                     onchange="onClick()"
                     id="left"
-                    value="0"
                     type="number"
                     placeholder="пишите значение для left"
                 />
@@ -135,7 +147,6 @@
                 <input
                     onchange="onClick()"
                     id="right"
-                    value="0"
                     type="number"
                     placeholder="пишите значение для right"
                 />
@@ -144,13 +155,16 @@
                 <input
                     onchange="onClick()"
                     id="bottom"
-                    value="0"
                     type="number"
                     placeholder="пишите значение для bottom"
                 />
                 <button id="button">Начать Заново</button>
-                <button id="dialog-button" onclick="closeDialog(event)">
-                    hide Daughter form
+                <button
+                    class="X"
+                    id="dialog-button"
+                    onclick="closeDialog(event)"
+                >
+                    X
                 </button>
             </form>
         </dialog>
