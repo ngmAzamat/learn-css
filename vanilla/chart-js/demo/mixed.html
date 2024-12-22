@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="max-width: 100vh">
+    <canvas></canvas>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script>
+    window.onload = function () {
+      const ctx = document.querySelector("canvas").getContext("2d");
+
+      const a = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: [
+            "Lannister",
+            "Stark",
+            "Tally",
+            "Baratheon",
+            "Tyrell",
+            "Arryn",
+            "Martell",
+            "Greyjoy",
+            "Krown",
+          ],
+          datasets: [
+            {
+              label: "Army",
+              tension: 0.5,
+              fill: true,
+              borderColor: "blue",
+              backgroundColor: "rgb(255, 99, 132)",
+              data: [
+                35000, 21000, 16000, 20000, 80000, 26000, 24000, 6000, 12000,
+              ],
+            },
+            {
+              label: "money",
+              fill: true,
+              borderColor: "red",
+              backgroundColor: "rgb(255, 99, 132)",
+              tension: 0.5,
+              data: [
+                56750, 27750, 25700, 30500, 51050, 48000, 30500, 23000, 51200,
+              ],
+            },
+          ],
+        },
+      });
+    };
+  </script>
+</html>

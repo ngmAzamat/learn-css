@@ -1,0 +1,41 @@
+### type
+
+bar - столбцы
+line - линия
+pie - круг(пирог)
+doughnut - бублик
+polarArea - 
+scatter - точка на карте необходимо задать x и y
+bubble - тоже что и scatter но можно задать r(размер точки)
+
+### а вот scatter
+
+
+const config = {
+  type: 'scatter',
+  data: data,
+  }
+
+const data = {
+  datasets: [{
+    label: 'Scatter Dataset',
+    data: [{
+      x: 0,
+      y: 0
+    }],
+    backgroundColor: 'rgb(255, 99, 132)'
+  }],
+};
+
+###
+
+свойство borderColor: отвечяет за закраску border
+свойство borderWidth: отвечяет за толщину border
+свойство tension: отвечяет за плавность(0.1 намример)
+свойство fill: отвечяет за то будет ли закрашено все под border
+свойство backgroundColor: отвечяет за закраску всего под border
+
+
+### mixed
+
+что бы налажить график на график можно просто указать два {} через зяпятую в datasets

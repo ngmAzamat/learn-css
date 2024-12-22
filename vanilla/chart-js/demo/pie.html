@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="max-width: 100vh">
+    <canvas></canvas>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script>
+    window.onload = function () {
+      const ctx = document.querySelector("canvas").getContext("2d");
+
+      const a = new Chart(ctx, {
+        type: "pie",
+        data: {
+          labels: [
+            "Lannister",
+            "Stark",
+            "Tally",
+            "Baratheon",
+            "Tyrell",
+            "Arryn",
+            "Martell",
+            "Greyjoy",
+            "Krown",
+          ],
+          datasets: [
+            {
+              label: "Army",
+              data: [
+                35000, 21000, 16000, 20000, 80000, 26000, 24000, 6000, 12000,
+              ],
+            },
+          ],
+        },
+      });
+    };
+  </script>
+</html>

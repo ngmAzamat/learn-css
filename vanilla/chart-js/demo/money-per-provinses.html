@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas></canvas>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script>
+    window.onload = function () {
+      const ctx = document.querySelector("canvas").getContext("2d");
+
+      const a = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: [
+            "Lannister",
+            "Stark",
+            "Tally",
+            "Baratheon",
+            "Tyrell",
+            "Arryn",
+            "Martell",
+            "Greyjoy",
+            "Krown",
+          ],
+          datasets: [
+            {
+              label: "money-per-provinses",
+              data: [
+                10000 / 18,
+                5000 / 21,
+                5500 / 19,
+                6400 / 21,
+                15000 / 35,
+                7000 / 17,
+                4000 / 17,
+                2000 / 11,
+                0,
+              ],
+            },
+          ],
+        },
+      });
+    };
+  </script>
+</html>
