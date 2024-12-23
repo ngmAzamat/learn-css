@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button id="dialog-button2" onclick="openDialog2(event)">
+      show Parent form
+    </button>
+    <dialog id="2">
+      <form>
+        <h1>Parent</h1>
+        <label>position</label>
+        <select onchange="onClick2()" id="position2">
+          <option value="relative">relative</option>
+          <option value="absoulte">absoulte</option>
+          <option value="fixed">fixed</option>
+          <option value="static">static</option>
+          <option value="sticky">sticky</option>
+        </select>
+        <label>color</label>
+        <input type="color" id="color2" onchange="onClick2()" />
+        <label>unit</label>
+        <select onchange="onClick2()" id="select2">
+          <option value="px">пиксели</option>
+          <option value="%">проценты</option>
+          <option value="em">em</option>
+          <option value="rem">rem</option>
+          <option value="vw">vw</option>
+
+          <option value="vh">vh</option>
+          <option value="vmin">vwin</option>
+          <option value="vmax">vwax</option>
+          <option value="svh">vwax</option>
+          <option value="lvh">vwax</option>
+          <option value="dvh">vwax</option>
+        </select>
+        <label>zIndex</label>
+        <input
+          onchange="onClick2()"
+          id="z-index2"
+          type="number"
+          placeholder="пишите значение для z-index"
+        />
+        <label>top</label>
+        <input
+          onchange="onClick2()"
+          id="top2"
+          type="number"
+          placeholder="пишите значение для top"
+        />
+        <label>left</label>
+
+        <input
+          onchange="onClick2()"
+          id="left2"
+          type="number"
+          placeholder="пишите значение для left"
+        />
+        <label>right</label>
+
+        <input
+          onchange="onClick2()"
+          id="right2"
+          type="number"
+          placeholder="пишите значение для right"
+        />
+        <label>bottom</label>
+
+        <input
+          onchange="onClick2()"
+          id="bottom2"
+          type="number"
+          placeholder="пишите значение для bottom"
+        />
+        <button id="button2">Начать Заново</button>
+        <button class="X" id="dialog-button2" onclick="closeDialog2(event)">
+          X
+        </button>
+      </form>
+    </dialog>
+
+    <button id="dialog-button" onclick="openDialog(event)">
+      show Daughter form
+    </button>
+
+    <dialog id="1">
+      <form>
+        <h1>Box</h1>
+        <label>position</label>
+        <select onchange="onClick()" id="position">
+          <option value="absoulte">absoulte</option>
+          <option value="relative">relative</option>
+          <option value="fixed">fixed</option>
+          <option value="static">static</option>
+          <option value="sticky">sticky</option>
+        </select>
+        <label>color</label>
+        <input type="color" id="color" onchange="onClick()" />
+        <label>unit</label>
+        <select id="select">
+          <option value="px">пиксели</option>
+          <option value="%">проценты</option>
+          <option value="em">em</option>
+          <option value="rem">rem</option>
+          <option value="vw">vw</option>
+
+          <option value="vh">vh</option>
+          <option value="vmin">vwin</option>
+          <option value="vmax">vwax</option>
+          <option value="svh">vwax</option>
+          <option value="lvh">vwax</option>
+          <option value="dvh">vwax</option>
+        </select>
+        <label>zIndex</label>
+        <input
+          onchange="onClick()"
+          id="z-index"
+          type="number"
+          placeholder="пишите значение для z-index"
+        />
+
+        <label>top</label>
+        <input
+          onchange="onClick()"
+          id="top"
+          type="number"
+          placeholder="пишите значение для top"
+        />
+        <label>left</label>
+
+        <input
+          onchange="onClick()"
+          id="left"
+          type="number"
+          placeholder="пишите значение для left"
+        />
+        <label>right</label>
+
+        <input
+          onchange="onClick()"
+          id="right"
+          type="number"
+          placeholder="пишите значение для right"
+        />
+        <label>bottom</label>
+
+        <input
+          onchange="onClick()"
+          id="bottom"
+          type="number"
+          placeholder="пишите значение для bottom"
+        />
+        <button id="button">Начать Заново</button>
+        <button class="X" id="dialog-button" onclick="closeDialog(event)">
+          X
+        </button>
+      </form>
+    </dialog>
+    <div id="box">
+      <div id="block"></div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
