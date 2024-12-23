@@ -1,7 +1,6 @@
 function onClick() {
   const block = document.createElement("div");
   block.id = "block";
-  block.body.append();
   let zIndex = document.getElementById("z-index");
   let color = document.getElementById("color");
   let position = document.getElementById("position");
@@ -17,6 +16,7 @@ function onClick() {
   block.style.bottom = inputBottom.value + unitOfMeasurement.value;
   block.style.backgroundColor = color.value;
   block.style.zIndex = zIndex.value;
+  document.body.append(block);
 }
 
 function openDialog(event) {
