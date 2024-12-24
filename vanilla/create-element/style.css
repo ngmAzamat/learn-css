@@ -50,6 +50,8 @@ form > * {
 button {
   color: white;
   font-size: 1em;
+  background-color: blue;
+
   font-weight: bold;
   border-radius: 5px;
   padding: 10px;
