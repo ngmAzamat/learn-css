@@ -7,7 +7,19 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <button id="dialog-button" onclick="openDialog(event)" onclick="onClick()">
+    <button id="dialog-button1" onclick="openDialog1(event)">
+      create block
+    </button>
+    <button id="dialog-button2" onclick="openDialog2(event)">
+      create block
+    </button>
+    <button id="dialog-button3" onclick="openDialog3(event)">
+      create block
+    </button>
+    <button id="dialog-button4" onclick="openDialog4(event)">
+      create block
+    </button>
+    <button id="dialog-button5" onclick="openDialog5(event)">
       create block
     </button>
 
@@ -22,8 +34,10 @@
           <option value="static">static</option>
           <option value="sticky">sticky</option>
         </select>
+        <label>backgroundcolor</label>
+        <input type="color" id="backgroundcolor" value="#0000ff" />
         <label>color</label>
-        <input type="color" id="color" />
+        <input type="color" id="color" value="#ffffff" />
         <label>unit</label>
         <select id="select">
           <option value="px">пиксели</option>
@@ -40,38 +54,222 @@
           <option value="dvh">vwax</option>
         </select>
         <label>zIndex</label>
-        <input
-          id="z-index"
-          type="number"
-          placeholder="пишите значение для z-index"
-        />
+        <input id="z-index" type="number" placeholder="z-index" />
 
         <label>top</label>
-        <input id="top" type="number" placeholder="пишите значение для top" />
+        <input id="top" type="number" placeholder="top" />
         <label>left</label>
 
-        <input id="left" type="number" placeholder="пишите значение для left" />
+        <input id="left" type="number" placeholder="left" />
         <label>right</label>
 
-        <input
-          id="right"
-          type="number"
-          placeholder="пишите значение для right"
-        />
+        <input id="right" type="number" placeholder="right" />
         <label>bottom</label>
 
-        <input
-          id="bottom"
-          type="number"
-          placeholder="пишите значение для bottom"
-        />
-        <button id="button">Начать Заново</button>
-        <button
-          class="X"
-          id="dialog-button"
-          onclick="closeDialog(event)"
-          onclick="onClick()"
-        >
+        <input id="bottom" type="number" placeholder="bottom" />
+        <button id="button" onclick="onClick(event)">create</button>
+        <button class="X" id="dialog-button" onclick="closeDialog1(event)">
+          X
+        </button>
+      </form>
+    </dialog>
+
+    <dialog id="2">
+      <form>
+        <h1>Box</h1>
+        <label>position</label>
+        <select id="position">
+          <option value="absoulte">absoulte</option>
+          <option value="relative">relative</option>
+          <option value="fixed">fixed</option>
+          <option value="static">static</option>
+          <option value="sticky">sticky</option>
+        </select>
+        <label>backgroundcolor</label>
+        <input type="color" id="backgroundcolor" value="#000000" />
+        <label>color</label>
+        <input type="color" id="color" value="#ffffff" />
+        <label>unit</label>
+        <select id="select">
+          <option value="px">пиксели</option>
+          <option value="%">проценты</option>
+          <option value="em">em</option>
+          <option value="rem">rem</option>
+          <option value="vw">vw</option>
+
+          <option value="vh">vh</option>
+          <option value="vmin">vwin</option>
+          <option value="vmax">vwax</option>
+          <option value="svh">vwax</option>
+          <option value="lvh">vwax</option>
+          <option value="dvh">vwax</option>
+        </select>
+        <label>zIndex</label>
+        <input id="z-index" type="number" placeholder="z-index" />
+
+        <label>top</label>
+        <input id="top" type="number" placeholder="top" />
+        <label>left</label>
+
+        <input id="left" type="number" placeholder="left" />
+        <label>right</label>
+
+        <input id="right" type="number" placeholder="right" />
+        <label>bottom</label>
+
+        <input id="bottom" type="number" placeholder="bottom" />
+        <button id="button" onclick="onClick(event)">create</button>
+        <button class="X" id="dialog-button" onclick="closeDialog2(event)">
+          X
+        </button>
+      </form>
+    </dialog>
+    <dialog id="3">
+      <form>
+        <h1>Box</h1>
+        <label>position</label>
+        <select id="position">
+          <option value="absoulte">absoulte</option>
+          <option value="relative">relative</option>
+          <option value="fixed">fixed</option>
+          <option value="static">static</option>
+          <option value="sticky">sticky</option>
+        </select>
+        <label>backgroundcolor</label>
+        <input type="color" id="backgroundcolor" value="#ffffff" />
+        <label>color</label>
+        <input type="color" id="color" value="#000000" />
+        <label>unit</label>
+        <select id="select">
+          <option value="px">пиксели</option>
+          <option value="%">проценты</option>
+          <option value="em">em</option>
+          <option value="rem">rem</option>
+          <option value="vw">vw</option>
+
+          <option value="vh">vh</option>
+          <option value="vmin">vwin</option>
+          <option value="vmax">vwax</option>
+          <option value="svh">vwax</option>
+          <option value="lvh">vwax</option>
+          <option value="dvh">vwax</option>
+        </select>
+        <label>zIndex</label>
+        <input id="z-index" type="number" placeholder="z-index" />
+
+        <label>top</label>
+        <input id="top" type="number" placeholder="top" />
+        <label>left</label>
+
+        <input id="left" type="number" placeholder="left" />
+        <label>right</label>
+
+        <input id="right" type="number" placeholder="right" />
+        <label>bottom</label>
+
+        <input id="bottom" type="number" placeholder="bottom" />
+        <button id="button" onclick="onClick(event)">create</button>
+        <button class="X" id="dialog-button" onclick="closeDialog3(event)">
+          X
+        </button>
+      </form>
+    </dialog>
+    <dialog id="4">
+      <form>
+        <h1>Box</h1>
+        <label>position</label>
+        <select id="position">
+          <option value="absoulte">absoulte</option>
+          <option value="relative">relative</option>
+          <option value="fixed">fixed</option>
+          <option value="static">static</option>
+          <option value="sticky">sticky</option>
+        </select>
+        <label>backgroundcolor</label>
+        <input type="color" id="backgroundcolor" value="#a52a2a" />
+        <label>color</label>
+        <input type="color" id="color" value="#ffffff" />
+        <label>unit</label>
+        <select id="select">
+          <option value="px">пиксели</option>
+          <option value="%">проценты</option>
+          <option value="em">em</option>
+          <option value="rem">rem</option>
+          <option value="vw">vw</option>
+
+          <option value="vh">vh</option>
+          <option value="vmin">vwin</option>
+          <option value="vmax">vwax</option>
+          <option value="svh">vwax</option>
+          <option value="lvh">vwax</option>
+          <option value="dvh">vwax</option>
+        </select>
+        <label>zIndex</label>
+        <input id="z-index" type="number" placeholder="z-index" />
+
+        <label>top</label>
+        <input id="top" type="number" placeholder="top" />
+        <label>left</label>
+
+        <input id="left" type="number" placeholder="left" />
+        <label>right</label>
+
+        <input id="right" type="number" placeholder="right" />
+        <label>bottom</label>
+
+        <input id="bottom" type="number" placeholder="bottom" />
+        <button id="button" onclick="onClick(event)">create</button>
+        <button class="X" id="dialog-button" onclick="closeDialog4(event)">
+          X
+        </button>
+      </form>
+    </dialog>
+    <dialog id="5">
+      <form>
+        <h1>Box</h1>
+        <label>position</label>
+        <select id="position">
+          <option value="absoulte">absoulte</option>
+          <option value="relative">relative</option>
+          <option value="fixed">fixed</option>
+          <option value="static">static</option>
+          <option value="sticky">sticky</option>
+        </select>
+        <label>backgroundcolor</label>
+        <input type="color" id="backgroundcolor" value="#008000" />
+        <label>color</label>
+        <input type="color" id="color" value="#ffffff" />
+        <label>unit</label>
+        <select id="select">
+          <option value="px">пиксели</option>
+          <option value="%">проценты</option>
+          <option value="em">em</option>
+          <option value="rem">rem</option>
+          <option value="vw">vw</option>
+
+          <option value="vh">vh</option>
+          <option value="vmin">vwin</option>
+          <option value="vmax">vwax</option>
+          <option value="svh">vwax</option>
+          <option value="lvh">vwax</option>
+          <option value="dvh">vwax</option>
+        </select>
+        <label>zIndex</label>
+        <input id="z-index" type="number" placeholder="z-index" />
+
+        <label>top</label>
+        <input id="top" type="number" placeholder="top" />
+        <label>left</label>
+
+        <input id="left" type="number" placeholder="left" />
+        <label>right</label>
+
+        <input id="right" type="number" placeholder="right" />
+        <label>bottom</label>
+
+        <input id="bottom" type="number" placeholder="bottom" />
+        <button id="button" onclick="onClick(event)">create</button>
+        <button class="X" id="dialog-button" onclick="closeDialog5(event)">
           X
         </button>
       </form>
