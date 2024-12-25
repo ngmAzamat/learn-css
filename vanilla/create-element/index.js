@@ -1,5 +1,7 @@
 function onClick(event) {
   event.preventDefault();
+  const height = document.getElementById("height");
+  const width = document.getElementById("width");
   const block = document.createElement("div");
   block.id = "block";
   let zIndex = document.getElementById("z-index");
@@ -20,6 +22,8 @@ function onClick(event) {
   block.style.backgroundColor = backgroundcolor.value;
   block.style.color = color.value;
   block.style.zIndex = zIndex.value;
+  block.style.width = width.value + unitOfMeasurement.value;
+  block.style.height = height.value + unitOfMeasurement.value;
   block.style.color = document.body.append(block);
   block.setAttribute("contenteditable", "true");
 }
