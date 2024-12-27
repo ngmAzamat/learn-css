@@ -46,6 +46,7 @@ form {
         width: 250px;
         margin-right: 10px;
         box-sizing: border-box;
+        margin-bottom: 5px;
     }
 
     label {
@@ -55,6 +56,10 @@ form {
         text-align: right;
         vertical-align: middle;
     }
+}
+
+dialog {
+    padding: 2rem;
 }
 
 .X {
