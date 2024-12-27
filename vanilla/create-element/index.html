@@ -26,288 +26,369 @@
         </div>
 
         <dialog id="1">
+            <button class="X" id="dialog-button" onclick="closeDialog1(event)">
+                X
+            </button>
             <form>
-                <label>position</label>
-                <select id="position">
-                    <option value="absoulte">absoulte</option>
-                    <option value="relative">relative</option>
-                    <option value="fixed">fixed</option>
-                    <option value="static">static</option>
-                    <option value="sticky">sticky</option>
-                </select>
-                <label>backgroundcolor</label>
-                <input type="color" id="backgroundcolor" value="#0000ff" />
-                <label>color</label>
-                <input type="color" id="color" value="#ffffff" />
-                <label>width</label>
-                <input type="number" id="width" value="100" />
-                <label>height</label>
-                <input type="number" id="height" value="100" />
-                <label>unit</label>
-                <select id="select">
-                    <option value="px">пиксели</option>
-                    <option value="%">проценты</option>
-                    <option value="em">em</option>
-                    <option value="rem">rem</option>
-                    <option value="vw">vw</option>
+                <div class="part">
+                    <label>position</label>
+                    <select id="position">
+                        <option value="absoulte">absoulte</option>
+                        <option value="relative">relative</option>
+                        <option value="fixed">fixed</option>
+                        <option value="static">static</option>
+                        <option value="sticky">sticky</option>
+                    </select>
+                </div>
 
-                    <option value="vh">vh</option>
-                    <option value="vmin">vwin</option>
-                    <option value="vmax">vwax</option>
-                    <option value="svh">vwax</option>
-                    <option value="lvh">vwax</option>
-                    <option value="dvh">vwax</option>
-                </select>
-                <label>zIndex</label>
-                <input id="z-index" type="number" placeholder="z-index" />
+                <div class="part">
+                    <label>backgroundcolor</label>
+                    <input type="color" id="backgroundcolor" value="#0000ff" />
+                </div>
+                <div class="part">
+                    <label>color</label>
+                    <input type="color" id="color" value="#ffffff" />
+                </div>
+                <div class="part">
+                    <label>width</label>
+                    <input type="number" id="width" value="100" />
+                </div>
+                <div class="part">
+                    <label>height</label>
+                    <input type="number" id="height" value="100" />
+                </div>
+                <div class="part">
+                    <label>unit</label>
+                    <select id="select">
+                        <option value="px">пиксели</option>
+                        <option value="%">проценты</option>
+                        <option value="em">em</option>
+                        <option value="rem">rem</option>
+                        <option value="vw">vw</option>
 
-                <label>top</label>
-                <input id="top" type="number" placeholder="top" />
-                <label>left</label>
+                        <option value="vh">vh</option>
+                        <option value="vmin">vwin</option>
+                        <option value="vmax">vwax</option>
+                        <option value="svh">vwax</option>
+                        <option value="lvh">vwax</option>
+                        <option value="dvh">vwax</option>
+                    </select>
+                </div>
 
-                <input id="left" type="number" placeholder="left" />
-                <label>right</label>
-
-                <input id="right" type="number" placeholder="right" />
-                <label>bottom</label>
-
-                <input id="bottom" type="number" placeholder="bottom" />
+                <div class="part">
+                    <label>zIndex</label>
+                    <input id="z-index" type="number" placeholder="z-index" />
+                </div>
+                <div class="part">
+                    <label>top</label>
+                    <input id="top" type="number" placeholder="top" />
+                </div>
+                <div class="part">
+                    <label>left</label>
+                    <input id="left" type="number" placeholder="left" />
+                </div>
+                <div class="part">
+                    <label>right</label>
+                    <input id="right" type="number" placeholder="right" />
+                </div>
+                <div class="part">
+                    <label>bottom</label>
+                    <input id="bottom" type="number" placeholder="bottom" />
+                </div>
                 <button id="button" onclick="onClick(event)">create</button>
-                <button
-                    class="X"
-                    id="dialog-button"
-                    onclick="closeDialog1(event)"
-                >
-                    X
-                </button>
             </form>
         </dialog>
         <dialog id="2">
+            <button class="X" id="dialog-button" onclick="closeDialog2(event)">
+                X
+            </button>
             <form>
-                <label>position</label>
-                <select id="position2">
-                    <option value="absoulte">absoulte</option>
-                    <option value="relative">relative</option>
-                    <option value="fixed">fixed</option>
-                    <option value="static">static</option>
-                    <option value="sticky">sticky</option>
-                </select>
-                <label>backgroundcolor</label>
-                <input type="color" id="backgroundcolor2" value="#000000" />
-                <label>color</label>
-                <input type="color" id="color2" value="#ffffff" />
-                <label>width</label>
-                <input type="number" id="width2" value="100" />
-                <label>height</label>
-                <input type="number" id="height2" value="100" />
-                <label>unit</label>
-                <select id="select2">
-                    <option value="px">пиксели</option>
-                    <option value="%">проценты</option>
-                    <option value="em">em</option>
-                    <option value="rem">rem</option>
-                    <option value="vw">vw</option>
+                <div class="part">
+                    <label>position</label>
+                    <select id="position2">
+                        <option value="absoulte">absoulte</option>
+                        <option value="relative">relative</option>
+                        <option value="fixed">fixed</option>
+                        <option value="static">static</option>
+                        <option value="sticky">sticky</option>
+                    </select>
+                </div>
 
-                    <option value="vh">vh</option>
-                    <option value="vmin">vwin</option>
-                    <option value="vmax">vwax</option>
-                    <option value="svh">vwax</option>
-                    <option value="lvh">vwax</option>
-                    <option value="dvh">vwax</option>
-                </select>
-                <label>zIndex</label>
-                <input id="z-index2" type="number" placeholder="z-index" />
+                <div class="part">
+                    <label>backgroundcolor</label>
+                    <input type="color" id="backgroundcolor2" value="#000000" />
+                </div>
+                <div class="part">
+                    <label>color</label>
+                    <input type="color" id="color2" value="#ffffff" />
+                </div>
+                <div class="part">
+                    <label>width</label>
+                    <input type="number" id="width2" value="100" />
+                </div>
+                <div class="part">
+                    <label>height</label>
+                    <input type="number" id="height2" value="100" />
+                </div>
+                <div class="part">
+                    <label>unit</label>
+                    <select id="select2">
+                        <option value="px">пиксели</option>
+                        <option value="%">проценты</option>
+                        <option value="em">em</option>
+                        <option value="rem">rem</option>
+                        <option value="vw">vw</option>
 
-                <label>top</label>
-                <input id="top2" type="number" placeholder="top" />
-                <label>left</label>
+                        <option value="vh">vh</option>
+                        <option value="vmin">vwin</option>
+                        <option value="vmax">vwax</option>
+                        <option value="svh">vwax</option>
+                        <option value="lvh">vwax</option>
+                        <option value="dvh">vwax</option>
+                    </select>
+                </div>
 
-                <input id="left2" type="number" placeholder="left" />
-                <label>right</label>
+                <div class="part">
+                    <label>zIndex</label>
+                    <input id="z-index2" type="number" placeholder="z-index" />
+                </div>
+                <div class="part">
+                    <label>top</label>
+                    <input id="top2" type="number" placeholder="top" />
+                </div>
+                <div class="part">
+                    <label>left</label>
+                    <input id="left2" type="number" placeholder="left" />
+                </div>
+                <div class="part">
+                    <label>right</label>
+                    <input id="right2" type="number" placeholder="right" />
+                </div>
+                <div class="part">
+                    <label>bottom</label>
+                    <input id="bottom2" type="number" placeholder="bottom" />
+                </div>
 
-                <input id="right2" type="number" placeholder="right" />
-                <label>bottom</label>
-
-                <input id="bottom2" type="number" placeholder="bottom" />
-                <button id="button2" onclick="onClick2(event)">create</button>
-                <button
-                    class="X"
-                    id="dialog-button"
-                    onclick="closeDialog2(event)"
-                >
-                    X
-                </button>
+                <button id="button" onclick="onClick2(event)">create</button>
             </form>
         </dialog>
         <dialog id="3">
+            <button class="X" id="dialog-button" onclick="closeDialog3(event)">
+                X
+            </button>
             <form>
-                <label>position</label>
-                <select id="position3">
-                    <option value="absoulte">absoulte</option>
-                    <option value="relative">relative</option>
-                    <option value="fixed">fixed</option>
-                    <option value="static">static</option>
-                    <option value="sticky">sticky</option>
-                </select>
-                <label>backgroundcolor</label>
-                <input type="color" id="backgroundcolor3" value="#ffff00" />
-                <label>color</label>
-                <input type="color" id="color3" value="#000000" />
-                <label>width</label>
-                <input type="number" id="width3" value="100" />
-                <label>height</label>
-                <input type="number" id="height3" value="100" />
-                <label>unit</label>
-                <select id="select3">
-                    <option value="px">пиксели</option>
-                    <option value="%">проценты</option>
-                    <option value="em">em</option>
-                    <option value="rem">rem</option>
-                    <option value="vw">vw</option>
+                <div class="part">
+                    <label>position</label>
+                    <select id="position3">
+                        <option value="absoulte">absoulte</option>
+                        <option value="relative">relative</option>
+                        <option value="fixed">fixed</option>
+                        <option value="static">static</option>
+                        <option value="sticky">sticky</option>
+                    </select>
+                </div>
+                <div class="part">
+                    <label>backgroundcolor</label>
+                    <input type="color" id="backgroundcolor3" value="#ffff00" />
+                </div>
+                <div class="part">
+                    <label>color</label>
+                    <input type="color" id="color3" value="#000000" />
+                </div>
+                <div class="part">
+                    <label>width</label>
+                    <input type="number" id="width3" value="100" />
+                </div>
+                <div class="part">
+                    <label>height</label>
+                    <input type="number" id="height3" value="100" />
+                </div>
+                <div class="part">
+                    <label>unit</label>
+                    <select id="select3">
+                        <option value="px">пиксели</option>
+                        <option value="%">проценты</option>
+                        <option value="em">em</option>
+                        <option value="rem">rem</option>
+                        <option value="vw">vw</option>
 
-                    <option value="vh">vh</option>
-                    <option value="vmin">vwin</option>
-                    <option value="vmax">vwax</option>
-                    <option value="svh">vwax</option>
-                    <option value="lvh">vwax</option>
-                    <option value="dvh">vwax</option>
-                </select>
-                <label>zIndex</label>
-                <input id="z-index3" type="number" placeholder="" />
+                        <option value="vh">vh</option>
+                        <option value="vmin">vwin</option>
+                        <option value="vmax">vwax</option>
+                        <option value="svh">vwax</option>
+                        <option value="lvh">vwax</option>
+                        <option value="dvh">vwax</option>
+                    </select>
+                </div>
 
-                <label>top</label>
-                <input id="top3" type="number" placeholder="" />
-                <label>left</label>
+                <div class="part">
+                    <label>zIndex</label>
+                    <input id="z-index3" type="number" placeholder="" />
+                </div>
+                <div class="part">
+                    <label>top</label>
+                    <input id="top3" type="number" placeholder="" />
+                </div>
+                <div class="part">
+                    <label>left</label>
+                    <input id="left3" type="number" placeholder="" />
+                </div>
+                <div class="part">
+                    <label>right</label>
+                    <input id="right3" type="number" placeholder="" />
+                </div>
+                <div class="part">
+                    <label>bottom</label>
+                    <input id="bottom3" type="number" placeholder="" />
+                </div>
 
-                <input id="left3" type="number" placeholder="" />
-                <label>right</label>
-
-                <input id="right3" type="number" placeholder="" />
-                <label>bottom</label>
-
-                <input id="bottom3" type="number" placeholder="" />
                 <button id="button" onclick="onClick3(event)">create</button>
-                <button
-                    class="X"
-                    id="dialog-button"
-                    onclick="closeDialog3(event)"
-                >
-                    X
-                </button>
             </form>
         </dialog>
         <dialog id="4">
+            <button class="X" id="dialog-button" onclick="closeDialog4(event)">
+                X
+            </button>
             <form>
-                <label>position</label>
-                <select id="position4">
-                    <option value="absoulte">absoulte</option>
-                    <option value="relative">relative</option>
-                    <option value="fixed">fixed</option>
-                    <option value="static">static</option>
-                    <option value="sticky">sticky</option>
-                </select>
-                <label>backgroundcolor</label>
-                <input type="color" id="backgroundcolor4" value="#a52a2a" />
-                <label>color</label>
-                <input type="color" id="color4" value="#ffffff" />
-                <label>width</label>
-                <input type="number" id="width4" value="100" />
-                <label>height</label>
-                <input type="number" id="height4" value="100" />
-                <label>unit</label>
-                <select id="select4">
-                    <option value="px">пиксели</option>
-                    <option value="%">проценты</option>
-                    <option value="em">em</option>
-                    <option value="rem">rem</option>
-                    <option value="vw">vw</option>
+                <div class="part">
+                    <label>position</label>
+                    <select id="position4">
+                        <option value="absoulte">absoulte</option>
+                        <option value="relative">relative</option>
+                        <option value="fixed">fixed</option>
+                        <option value="static">static</option>
+                        <option value="sticky">sticky</option>
+                    </select>
+                </div>
 
-                    <option value="vh">vh</option>
-                    <option value="vmin">vwin</option>
-                    <option value="vmax">vwax</option>
-                    <option value="svh">vwax</option>
-                    <option value="lvh">vwax</option>
-                    <option value="dvh">vwax</option>
-                </select>
-                <label>zIndex</label>
-                <input id="z-index4" type="number" placeholder="" />
+                <div class="part">
+                    <label>backgroundcolor</label>
+                    <input type="color" id="backgroundcolor4" value="#a52a2a" />
+                </div>
+                <div class="part">
+                    <label>color</label>
+                    <input type="color" id="color4" value="#ffffff" />
+                </div>
+                <div class="part">
+                    <label>width</label>
+                    <input type="number" id="width4" value="100" />
+                </div>
+                <div class="part">
+                    <label>height</label>
+                    <input type="number" id="height4" value="100" />
+                </div>
+                <div class="part">
+                    <label>unit</label>
+                    <select id="select4">
+                        <option value="px">пиксели</option>
+                        <option value="%">проценты</option>
+                        <option value="em">em</option>
+                        <option value="rem">rem</option>
+                        <option value="vw">vw</option>
 
-                <label>top</label>
-                <input id="top4" type="number" placeholder="" />
-                <label>left</label>
+                        <option value="vh">vh</option>
+                        <option value="vmin">vwin</option>
+                        <option value="vmax">vwax</option>
+                        <option value="svh">vwax</option>
+                        <option value="lvh">vwax</option>
+                        <option value="dvh">vwax</option>
+                    </select>
+                </div>
 
-                <input id="left4" type="number" placeholder="" />
-                <label>right</label>
+                <div class="part">
+                    <label>zIndex</label>
+                    <input id="z-index4" type="number" placeholder="" />
+                </div>
+                <div class="part">
+                    <label>top</label>
+                    <input id="top4" type="number" placeholder="" />
+                </div>
+                <div class="part">
+                    <label>left</label>
+                    <input id="left4" type="number" placeholder="" />
+                </div>
+                <div class="part">
+                    <label>right</label>
+                    <input id="right4" type="number" placeholder="" />
+                </div>
+                <div class="part">
+                    <label>bottom</label>
+                    <input id="bottom4" type="number" placeholder="" />
+                </div>
 
-                <input id="right4" type="number" placeholder="" />
-                <label>bottom</label>
-
-                <input id="bottom4" type="number" placeholder="" />
                 <button id="button" onclick="onClick4(event)">create</button>
-                <button
-                    class="X"
-                    id="dialog-button"
-                    onclick="closeDialog4(event)"
-                >
-                    X
-                </button>
             </form>
         </dialog>
         <dialog id="5">
+            <button class="X" id="dialog-button" onclick="closeDialog5(event)">
+                X
+            </button>
             <form>
-                <label>position</label>
-                <select id="position5">
-                    <option value="absoulte">absoulte</option>
-                    <option value="relative">relative</option>
-                    <option value="fixed">fixed</option>
-                    <option value="static">static</option>
-                    <option value="sticky">sticky</option>
-                </select>
-                <label>backgroundcolor</label>
-                <input type="color" id="backgroundcolor5" value="#008000" />
-                <label>color</label>
-                <input type="color" id="color5" value="#ffffff" />
-                <label>width</label>
-                <input type="number" id="width5" value="100" />
-                <label>height</label>
-                <input type="number" id="height5" value="100" />
-                <label>unit</label>
-                <select id="select5">
-                    <option value="px">пиксели</option>
-                    <option value="%">проценты</option>
-                    <option value="em">em</option>
-                    <option value="rem">rem</option>
-                    <option value="vw">vw</option>
+                <div class="part">
+                    <label>position</label>
+                    <select id="position5">
+                        <option value="absoulte">absoulte</option>
+                        <option value="relative">relative</option>
+                        <option value="fixed">fixed</option>
+                        <option value="static">static</option>
+                        <option value="sticky">sticky</option>
+                    </select>
+                </div>
+                <div class="part">
+                    <label>backgroundcolor</label>
+                    <input type="color" id="backgroundcolor5" value="#008000" />
+                </div>
+                <div class="part">
+                    <label>color</label>
+                    <input type="color" id="color5" value="#ffffff" />
+                </div>
+                <div class="part">
+                    <label>width</label>
+                    <input type="number" id="width5" value="100" />
+                </div>
+                <div class="part">
+                    <label>height</label>
+                    <input type="number" id="height5" value="100" />
+                </div>
+                <div class="part">
+                    <label>unit</label>
+                    <select id="select5">
+                        <option value="px">пиксели</option>
+                        <option value="%">проценты</option>
+                        <option value="em">em</option>
+                        <option value="rem">rem</option>
+                        <option value="vw">vw</option>
 
-                    <option value="vh">vh</option>
-                    <option value="vmin">vwin</option>
-                    <option value="vmax">vwax</option>
-                    <option value="svh">vwax</option>
-                    <option value="lvh">vwax</option>
-                    <option value="dvh">vwax</option>
-                </select>
-                <label>zIndex</label>
-                <input id="z-index5" type="number" placeholder="z-index" />
+                        <option value="vh">vh</option>
+                        <option value="vmin">vwin</option>
+                        <option value="vmax">vwax</option>
+                        <option value="svh">vwax</option>
+                        <option value="lvh">vwax</option>
+                        <option value="dvh">vwax</option>
+                    </select>
+                </div>
+                <div class="part">
+                    <label>zIndex</label>
+                    <input id="z-index5" type="number" placeholder="z-index" />
+                </div>
+                <div class="part">
+                    <label>top</label>
+                    <input id="top5" type="number" placeholder="top" />
+                </div>
+                <div class="part">
+                    <label>left</label>
+                    <input id="left5" type="number" placeholder="left" />
+                </div>
+                <div class="part">
+                    <label>right</label>
+                    <input id="right5" type="number" placeholder="right" />
+                </div>
+                <div class="part">
+                    <label>bottom</label>
+                    <input id="bottom5" type="number" placeholder="bottom" />
+                </div>
 
-                <label>top</label>
-                <input id="top5" type="number" placeholder="top" />
-                <label>left</label>
-
-                <input id="left5" type="number" placeholder="left" />
-                <label>right</label>
-
-                <input id="right5" type="number" placeholder="right" />
-                <label>bottom</label>
-
-                <input id="bottom5" type="number" placeholder="bottom" />
                 <button id="button" onclick="onClick5(event)">create</button>
-                <button
-                    class="X"
-                    id="dialog-button"
-                    onclick="closeDialog5(event)"
-                >
-                    X
-                </button>
             </form>
         </dialog>
     </body>

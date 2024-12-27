@@ -2,14 +2,12 @@
     font-family: sans-serif;
 }
 
-label {
-    width: 100%;
-}
 html,
 body {
     min-height: 100vh;
     min-width: 100%;
     padding: 25px;
+    box-sizing: border-box;
 }
 
 .buttonContainer {
@@ -27,11 +25,46 @@ select {
 form {
     position: relative;
     border: 1px solid black;
-    max-width: 400px;
     padding: 20px;
     box-sizing: border-box;
     margin: 5px;
+
+    #button {
+        width: 100%;
+        max-width: 390px;
+    }
+
+    input {
+        border: 1px solid black;
+        padding: 10px;
+        outline: none;
+    }
+
+    input,
+    select {
+        display: inline-block;
+        width: 250px;
+        margin-right: 10px;
+        box-sizing: border-box;
+    }
+
+    label {
+        width: 125px;
+        margin-right: 10px;
+        display: inline-block;
+        text-align: right;
+        vertical-align: middle;
+    }
 }
+
+.X {
+    background-color: transparent;
+    color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 #box {
     position: relative;
     height: 500px;
@@ -56,7 +89,6 @@ button {
     color: white;
     font-size: 1em;
     background-color: blue;
-
     font-weight: bold;
     border-radius: 5px;
     padding: 10px;
@@ -84,48 +116,4 @@ button {
 #dialog-button5 {
     background-color: green;
     color: white;
-}
-
-input,
-select {
-    width: 57%;
-}
-
-#backgroundcolor,
-#backgroundcolor2,
-#backgroundcolor3,
-#backgroundcolor4,
-#backgroundcolor5 {
-    width: 57%;
-}
-
-input,
-select {
-    width: 72.5%;
-}
-
-input {
-    border: 1px solid black;
-    padding: 10px;
-    outline: none;
-}
-
-#color,
-#color2,
-#color3,
-#color4,
-#color5 {
-    width: 75%;
-}
-
-dialog::backdrop {
-    backdrop-filter: blur(4px);
-}
-
-.X {
-    background-color: transparent;
-    color: red;
-    position: absolute;
-    top: 0;
-    right: 0;
 }
