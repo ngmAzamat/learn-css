@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Kropp Fitness
+    link(rel="stylesheet" href="style.scss")
+  body
+    header(class="header")
+        a(class="header-logo" href="/")
+            img(src="images/logo.png" class="header-logo-image")
+        nav(class="header-menu")
+            ul(class="header-menu-list")
+                li(class="header-menu-item")
+                    a(href="/" class="header-menu-link is-current") Home
+                li(class="header-menu-item")
+                    a(href="/" class="header-menu-link") Pages
+                li(class="header-menu-item")
+                    a(href="/" class="header-menu-link") Portfolio
+                li(class="header-menu-item")
+                    a(href="/" class="header-menu-link") Blog
+                li(class="header-menu-item")
+                    a(href="/" class="header-menu-link") Shop
+        div(class="header-actions")
+            button(class="header-book-button button") Book Now
+            button(class="header-burger-button")
+                svg(width="23" height="2" viewBox="0 0 23 2" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    path d="M0.5 1H22.5" stroke="white" stroke-dasharray="22 22"

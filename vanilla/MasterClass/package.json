@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.13.3",
+    "@parcel/transformer-sass": "^2.13.3"
+  },
+  "scripts": {
+    "build": "parcel build index.pug --no-source-maps",
+    "dev": "parcel dev index.pug"
+  }
+}

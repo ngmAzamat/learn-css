@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "Yantramanav";
+    src: url("fonts/Yantramanav-Bold.woff2");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+.button:hover {
+    background-color: grey;
+}
+
+$Dark: #000000;
+$Light: #ffffff;
+$Border: 1px solid $Light;
+$BorderRadius: 30px;
+$Grey: #404040;
+$LightGrey: #c4c4c4;
+$InputHeight: 54px;
+$CotainerWidth: 1300px;
+$CotainerPaddingX: 15px;
+$Transition: 0.2s;
+$FontFamilyBase: "Heebo", sans-serif;
+$FontFamilyAccent: "Yantramanav", sans-serif;
+
+body {
+    background-color: $Dark;
+    colot: $LightGrey;
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 300;
+}
+
+a,
+button,
+textarea,
+input,
+svg * {
+    transition-duration: $Transition;
+}
+
+a {
+    color: $Light;
+}
+a:hover {
+    background-color: $LightGrey;
+}
+
+.container {
+    margin-inline: auto;
+    padding-inline: $CotainerPaddingX;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    height: 38px;
+    background-color: $Light;
+    border: none;
+    border-radius: $BorderRadius;
+    padding-inline: 26px;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    line-height: 2;
+    white-space: wrap;
+    &:hover {
+        background-color: $LightGrey;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.header-logo {
+    flex-shrink: 0;
+}
+
+.header-menu-list {
+    display: flex;
+    column-gap: 50px;
+}
+
+.header-menu-link {
+    display: inline-flex;
+    height: 90px;
+    text-decoration: none;
+    text-transform: uppercase;
+    align-items: center;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    column-gap: 7px;
+    &.is-current::after {
+        border-radius: 50%;
+        content: "";
+        width: 5px;
+        height: 5px;
+        background-color: currentColor;
+    }
+}
+
+.header-actions {
+    display: flex;
+    column-gap: 40px;
+}
+
+.header-burger-button {
+    background-color: transparent;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: $Border;
+    color: $Light;
+    border-radius: $BorderRadius;
+}
+.header-burger-button:hover {
+    color: $Grey;
+    border-color: currentColor;
+}
+.header-button-line {
+    width: 6px;
+    height: 1px;
+    border-color: currentColor;
+}
