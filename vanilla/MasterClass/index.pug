@@ -23,6 +23,24 @@ html(lang="en")
                     a(href="/" class="header-menu-link") Shop
         div(class="header-actions")
             button(class="header-book-button button") Book Now
-            button(class="header-burger-button")
-                svg(width="23" height="2" viewBox="0 0 23 2" fill="none" xmlns="http://www.w3.org/2000/svg")
-                    path d="M0.5 1H22.5" stroke="white" stroke-dasharray="22 22"
+            button(class="header-burger-button" title="open menu")
+                span(class="header-burger-button-line")
+                span(class="header-burger-button-line")
+                span(class="header-burger-button-line")
+    main(class="content")
+        h1(class="visible-hidden") Cropp Fitness Club
+        section(class="banner")
+            h2(class="visible-hidden") Upcoming events
+            div(class="banner-body")
+                div(class="banner-info") New Event coming up /
+                    time(datetime="06-7") june 7 -
+                    time(datetime="06-13") 13
+                h3(class="banner-title") Crossfit
+            div(class="banner-pagination")
+                ul(class="banner-pagination-list")
+                    li(class="banner-pagination-item")
+                        button(class="banner-pagination-button")
+                    li(class="banner-pagination-item")
+                        button(class="banner-pagination-button")
+                    li(class="banner-pagination-item")
+                        button(class="banner-pagination-button is-current")
