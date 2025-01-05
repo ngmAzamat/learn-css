@@ -6,41 +6,58 @@ html(lang="en")
     title Kropp Fitness
     link(rel="stylesheet" href="style.scss")
   body
-    header(class="header")
-        a(class="header-logo" href="/")
+    header.header
+        a.header-logo(href="/")
             img(src="images/logo.png" class="header-logo-image")
-        nav(class="header-menu")
-            ul(class="header-menu-list")
-                li(class="header-menu-item")
-                    a(href="/" class="header-menu-link is-current") Home
-                li(class="header-menu-item")
-                    a(href="/" class="header-menu-link") Pages
-                li(class="header-menu-item")
-                    a(href="/" class="header-menu-link") Portfolio
-                li(class="header-menu-item")
-                    a(href="/" class="header-menu-link") Blog
-                li(class="header-menu-item")
-                    a(href="/" class="header-menu-link") Shop
-        div(class="header-actions")
-            button(class="header-book-button button") Book Now
-            button(class="header-burger-button" title="open menu")
-                span(class="header-burger-button-line")
-                span(class="header-burger-button-line")
-                span(class="header-burger-button-line")
-    main(class="content")
-        h1(class="visible-hidden") Cropp Fitness Club
-        section(class="banner")
-            h2(class="visible-hidden") Upcoming events
-            div(class="banner-body")
-                div(class="banner-info") New Event coming up /
+        nav.header-menu
+            ul.header-menu-list
+                li.header-menu-item
+                    a.header-menu-link.is-current(href="/") Home
+                li.header-menu-item
+                    a.header-menu-link(href="/") Pages
+                li.header-menu-item
+                    a.header-menu-link(href="/") Portfolio
+                li.header-menu-item
+                    a.header-menu-link(href="/") Blog
+                li.header-menu-item
+                    a.header-menu-link(href="/") Shop
+        div.header-actions
+            button.header-book-button.button Book Now
+            button.header-burger-button(title="open menu")
+                span.header-burger-button-line
+                span.header-burger-button-line
+                span.header-burger-button-line
+    main.content
+        h1.visible-hidden Cropp Fitness Club
+        section.banner
+            h2.visible-hidden Upcoming events
+            div.banner-body
+                div.banner-info New Event coming up /
                     time(datetime="06-7") june 7 -
                     time(datetime="06-13") 13
-                h3(class="banner-title") Crossfit
-            div(class="banner-pagination")
-                ul(class="banner-pagination-list")
-                    li(class="banner-pagination-item")
-                        button(class="banner-pagination-button")
-                    li(class="banner-pagination-item")
-                        button(class="banner-pagination-button")
-                    li(class="banner-pagination-item")
-                        button(class="banner-pagination-button is-current")
+                h3.banner-title Crossfit
+            div.banner-pagination
+                ul.banner-pagination-list
+                    li.banner-pagination-item
+                        button.banner-pagination-button
+                    li.banner-pagination-item
+                        button.banner-pagination-button
+                    li.banner-pagination-item
+                        button.banner-pagination-button.is-current
+        section.motivation
+            h2.visible-hidden Motivation
+            ul.motivation-list
+                li.motivation-item
+                    .motivation-card.container
+                        .motivation-card-body
+                            h3.motivation-card-title.backdrop-title(data-title="Strong") Be You, Just Stronger Power in You
+                            .motivation-class-description
+                                p Unum solum justo ex ius. Pr cu Probo laboramus eius insolens euripidis te eos tota.
+                        img.motivation-card-image(src="images/motivationFirst.jpg" alt="text")
+                li.motivation-item
+                    .motivation-card.container
+                        .motivation-card-body
+                            h3.motivation-card-title.backdrop-title(data-title="Strong") Be You, Just Stronger Power in You
+                            .motivation-class-description
+                                p Unum solum justo ex ius. Pr cu Probo laboramus eius insolens euripidis te eos tota.
+                        img.motivation-card-image(src="images/motivationSecond.jpg" alt="text")

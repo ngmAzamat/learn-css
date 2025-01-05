@@ -7,7 +7,7 @@
 }
 
 body {
-  colot: #c4c4c4;
+  color: #c4c4c4;
   background-color: #000;
   font-size: 16px;
   font-weight: 300;
@@ -61,6 +61,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   align-items: center;
   column-gap: 20px;
+  min-height: 90px;
   padding-inline: 32px;
   display: flex;
 }
@@ -127,10 +128,9 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (width <= 1024px) {
   .header {
-    padding-top: 20px;
     flex-wrap: wrap;
     row-gap: 15px;
-    padding-inline: 15px;
+    padding-top: 20px;
   }
 
   .header-menu-link {
@@ -140,6 +140,14 @@ h1, h2, h3, h4, h5, h6 {
   .header-menu {
     flex-basis: 100%;
     order: 1;
+  }
+
+  .header, .banner {
+    padding-inline: 15px;
+  }
+
+  .banner {
+    row-gap: 10px;
   }
 }
 
@@ -163,6 +171,14 @@ h1, h2, h3, h4, h5, h6 {
   .header-menu-list {
     column-gap: 24px;
   }
+
+  .banner-info {
+    margin-bottom: 5px;
+  }
+
+  .banner-info:before {
+    margin-right: 10px;
+  }
 }
 
 .visible-hidden {
@@ -183,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #131619;
   flex-direction: column;
   justify-content: end;
-  min-height: 985px;
+  min-height: calc(100vh - 90px);
   padding: 36px 70px;
   display: flex;
 }
@@ -195,7 +211,7 @@ h1, h2, h3, h4, h5, h6 {
 .banner-info {
   dislay: flex;
   align-items: end;
-  font-size: 38px;
+  font-size: clamp(16px, 1.56vw, 30px);
   font-weight: 700;
   line-height: 1.27;
 }
@@ -203,11 +219,62 @@ h1, h2, h3, h4, h5, h6 {
 .banner-info:before {
   content: "";
   aspect-ratio: 1;
-  width: 194px;
+  width: clamp(60px, 10.1vw, 194px);
 }
 
 .banner-title {
-  font-size: 360px;
+  font-size: min(18.75vw, 360px);
   line-height: 1;
+}
+
+.banner-pagination-button {
+  background-color: #0000;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  display: inline-flex;
+}
+
+.banner-pagination-list {
+  justify-content: center;
+  column-gap: 14px;
+  display: flex;
+}
+
+.banner-pagination-item {
+  display: flex;
+}
+
+.banner-pagination-button:after {
+  content: "";
+  aspect-ratio: 1;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 10px;
+  transition-duration: .2s;
+}
+
+.banner-pagination-button.is-current:after {
+  background-color: #fff;
+}
+
+.banner-pagination-button:not(.is-current):hover:after {
+  border-color: #c4c4c4;
+}
+
+.motivation-item:nth-child(2n) {
+  background-color: #131619;
+}
+
+.motivation-item:nth-child(2n) .motivation-card {
+  flex-direction: row-reverse;
+}
+
+.motivation-card {
+  justify-content: start;
+  align-items: center;
+  column-gap: clamp(30px, 10.42vw, 200px);
+  display: flex;
 }
 /*# sourceMappingURL=index.8353e49f.css.map */

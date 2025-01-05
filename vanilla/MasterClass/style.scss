@@ -23,10 +23,11 @@ $CotainerPaddingX: 15px;
 $Transition: 0.2s;
 $FontFamilyBase: "Heebo", sans-serif;
 $FontFamilyAccent: "Yantramanav", sans-serif;
+$HeaderHeight: 90px;
 
 body {
     background-color: $Dark;
-    colot: $LightGrey;
+    color: $LightGrey;
     font-size: 16px;
     line-height: 1.75;
     font-weight: 300;
@@ -86,6 +87,7 @@ h6 {
     display: flex;
     justify-content: space-between;
     column-gap: 20px;
+    min-height: $HeaderHeight;
     padding-inline: 32px;
     align-items: center;
 }
@@ -102,7 +104,7 @@ h6 {
 
 .header-menu-link {
     display: inline-flex;
-    height: 90px;
+    height: $HeaderHeight;
     text-decoration: none;
     text-transform: uppercase;
     align-items: center;
@@ -152,7 +154,6 @@ h6 {
         flex-wrap: wrap;
         row-gap: 15px;
         padding-top: 20px;
-        padding-inline: 15px;
     }
     .header-menu-link {
         height: 50px;
@@ -160,6 +161,13 @@ h6 {
     .header-menu {
         order: 1;
         flex-basis: 100%;
+    }
+    .header,
+    .banner {
+        padding-inline: 15px;
+    }
+    .banner {
+        row-gap: 10px;
     }
 }
 
@@ -178,6 +186,12 @@ h6 {
     }
     .header-menu-list {
         column-gap: 24px;
+    }
+    .banner-info {
+        margin-bottom: 5px;
+    }
+    .banner-info::before {
+        margin-right: 10px;
     }
 }
 
@@ -198,7 +212,7 @@ h6 {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    min-height: 985px;
+    min-height: calc(100vh - $HeaderHeight);
     padding: 36px 70px;
     color: $Light;
     background-color: $Dark-Alternate;
@@ -212,15 +226,64 @@ h6 {
     dislay: flex;
     align-items: end;
     font-weight: 700;
-    font-size: 38px;
+    font-size: clamp(16px, 1.56vw, 30px);
     line-height: 1.27;
     &::before {
         content: "";
-        width: 194px;
+        width: clamp(60px, 10.1vw, 194px);
         aspect-ratio: 1;
+        /* background: url("./icons/"); */
     }
 }
 .banner-title {
-    font-size: 360px;
+    font-size: min(18.75vw, 360px);
     line-height: 1;
+}
+
+.banner-pagination-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 7px;
+    border: none;
+}
+
+.banner-pagination-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 14px;
+}
+.banner-pagination-item {
+    display: flex;
+}
+
+.banner-pagination-button::after {
+    border-radius: 50%;
+    content: "";
+    border: $Border;
+    width: 10px;
+    aspect-ratio: 1;
+    transition-duration: $Transition;
+}
+
+.banner-pagination-button.is-current::after {
+    background-color: $Light;
+}
+
+.banner-pagination-button:not(.is-current):hover::after {
+    border-color: $LightGrey;
+}
+.motivation-item:nth-child(even) {
+    background-color: $Dark-Alternate;
+}
+.motivation-item:nth-child(even) .motivation-card {
+    flex-direction: row-reverse;
+}
+
+.motivation-card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: clamp(30px, 10.42vw, 200px);
 }

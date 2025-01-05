@@ -1,0 +1,30 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: transparent;
+    background-image: url("../map-of-westeros.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+
+    min-height: 100vh;
+}
+
+.army {
+    position: absolute;
+    background: transparent;
+    z-index: 10;
+
+    img {
+        width: 50px;
+        height: auto;
+    }
+
+    &:hover {
+        filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.7));
+    }
+}
