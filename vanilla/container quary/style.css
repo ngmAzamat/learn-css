@@ -1,0 +1,42 @@
+html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+:root {
+    --LightBlue: lightblue;
+    --Border: 1px solid black;
+    --Red: red;
+}
+
+.container {
+    width: 20vw;
+    aspect-ratio: 1;
+    container-type: size;
+    container-name: kindom;
+    border: var(--Border);
+    background-color: var(--LightBlue);
+}
+.header {
+    width: 50%;
+    height: 50%;
+    background-color: var(--Red);
+    border: var(--Border);
+}
+
+.block {
+    width: 50%;
+    height: 50%;
+    background-color: var(--Red);
+    border: var(--Border);
+}
+
+@container kindom (max-width: 100px) {
+    .block {
+        width: 100cqw;
+    }
+}
