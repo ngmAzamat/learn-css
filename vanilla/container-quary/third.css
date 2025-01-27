@@ -22,25 +22,31 @@ body {
 }
 
 .container {
+    display: flex;
     height: 100vh;
     width: 100vw;
     background-color: var(--Blue);
     border: var(--BorderTransparentBased);
     padding: 5px;
-    display: flex;
     box-sizing: border-box;
     justify-content: start;
     align-items: start;
-    flex-wrap: wrap;
 }
 
 .container-body {
     display: flex;
     flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
     gap: 5px;
+    container-name: main;
+    container-type: inline-size;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     border: var(--Border);
     border-radius: 2.5px;
@@ -69,29 +75,26 @@ body {
 .card-body {
     box-sizing: border-box;
     text-align: center;
-
+    flex-grow: 1;
+    max-height: 165px;
     padding: 10px;
-    width: 100%;
-    min-height: 100%;
-    max-height: 100%;
 }
 
-.visually-hidden {
-    display: contents;
-    color: transparent;
-    background-color: transparent;
+.aside {
+    background-color: var(--Black);
+    color: var(--White);
+    min-width: 200px;
+    height: 100%;
+}
+.aside-list {
+    list-style-type: none;
 }
 
-.visually-hidden > * {
-    display: none;
-    color: transparent;
-    background-color: transparent;
-}
-
-@media (max-width: 430px) {
+@container main (max-width: 430px) {
     .container-body {
         gap: 2.5px;
     }
+
     .card {
         width: 100%;
         max-width: 100%;

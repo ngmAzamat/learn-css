@@ -31,7 +31,6 @@ body {
     box-sizing: border-box;
     justify-content: start;
     align-items: start;
-    flex-wrap: wrap;
 }
 
 .container-body {
@@ -76,22 +75,22 @@ body {
     max-height: 100%;
 }
 
-.visually-hidden {
-    display: contents;
-    color: transparent;
-    background-color: transparent;
+.aside {
+    background-color: var(--Black);
+    color: var(--White);
+    min-width: 200px;
+    height: 100%;
 }
-
-.visually-hidden > * {
-    display: none;
-    color: transparent;
-    background-color: transparent;
+.aside-list {
+    list-style-type: none;
 }
 
 @media (max-width: 430px) {
     .container-body {
+        flex-grow: 67;
         gap: 2.5px;
     }
+
     .card {
         width: 100%;
         max-width: 100%;
