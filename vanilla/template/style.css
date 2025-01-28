@@ -1,0 +1,13 @@
+body,
+html {
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: sans-serif;
+}
+button {
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
