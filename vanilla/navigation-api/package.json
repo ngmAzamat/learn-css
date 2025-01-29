@@ -1,0 +1,12 @@
+{
+  "name": "navigation-api",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "parcel": "^2.13.3"
+  }
+}

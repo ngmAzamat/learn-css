@@ -18,7 +18,10 @@
             </h2>
         </template>
         <script>
-            if ("navigation" in window && "intercept" in Navigation.prototype) {
+            if (
+                window.navigation &&
+                typeof window.navigation.intercept === "function"
+            ) {
                 console.log("Navigation API поддерживается!");
             } else {
                 console.log(
