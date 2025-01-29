@@ -2,7 +2,7 @@ navigation.addEventListener("navigate", (navigateEvent) => {
   if (shouldNotIntercept(navigateEvent)) return;
   const url = new URL(navigateEvent.destination.url);
 
-  if (url.pathname.startsWith("/about")) {
+  if (url.pathname.startsWith("/navigation-api/about")) {
     if ("navigation" in window && "intercept" in Navigation.prototype) {
       console.log("Navigation API поддерживается!");
     } else {
