@@ -10,6 +10,7 @@
         <header>
             <a href="about">About Us</a>
         </header>
+        <div id="container"></div>
         <template>
             <h2>
                 About us: The Dark Lord Sauron provides the service of Creating
@@ -18,32 +19,38 @@
             </h2>
         </template>
         <script>
-            if (
-                window.navigation &&
-                typeof window.navigation.intercept === "function"
-            ) {
-                console.log("Navigation API поддерживается!");
-            } else {
-                console.log(
-                    "Navigation API НЕ поддерживается в этом браузере.",
+            function shouldNotIntercept(navigationEvent) {
+                return (
+                    !navigationEvent.canIntercept ||
+                    navigationEvent.hashChange ||
+                    navigationEvent.downloadRequest ||
+                    navigationEvent.formData
                 );
             }
 
-            navigation.addEventListener("navigate", (navigateEvent) => {
-                if (shouldNotIntercept(navigateEvent)) return;
-                const url = new URL(navigateEvent.destination.url);
+            if ("navigation" in window) {
+                console.log("Navigation API поддерживается!");
+                navigation.addEventListener("navigate", (navigateEvent) => {
+                    if (shouldNotIntercept(navigateEvent)) return;
 
-                if (url.pathname.startsWith("/navigation-api/about")) {
+                    const url = new URL(navigateEvent.destination.url);
+
                     navigateEvent.intercept({
                         async handler() {
                             let temp =
                                 document.getElementsByTagName("template")[0];
                             const Clones = temp.content.cloneNode(true);
-                            document.body.appendChild(Clones);
+                            const con = document.getElementById("container");
+                            con.innerHTML = null;
+                            con.appendChild(Clones);
                         },
                     });
-                }
-            });
+                });
+            } else {
+                console.error(
+                    "Navigation API НЕ поддерживается в этом браузере.",
+                );
+            }
         </script>
     </body>
 </html>
